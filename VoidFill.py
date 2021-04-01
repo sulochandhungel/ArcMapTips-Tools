@@ -1,3 +1,5 @@
+## Fill voids in DEM using a 4x4 NbrRectangle
+
 import arcpy
 from arcpy import env
 from arcpy.sa import *
