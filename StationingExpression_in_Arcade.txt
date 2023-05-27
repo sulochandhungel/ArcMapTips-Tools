@@ -1,0 +1,15 @@
+var station = $measure
+var IsNegative = 0
+
+if (station < 0){
+  station = station*-1
+  IsNegative = 1
+}
+
+var stationlbR = Text(station, '00.0')
+var stationlbL = Text(First(Split(station/100,'.',1)), '###00')
+
+var stationlb = Concatenate([stationlbL, stationlbR],'+')
+if(isNegative == 1) stationlb = '-' + stationlb
+
+return stationlb
